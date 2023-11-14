@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comanda de Bar</title>
+    <script defer src="script.js"></script>
+</head>
+<style>
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
+   .text{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 30;
+    color: black;
+    border: 3px solid #0fff;
+   }
+   .gradient{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background:grey;
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+   }
+@keyframes colors {
+0% {
+    background-position: 0% 50%;
+}
+
+50% {
+    background-position: 100% 50%;
+}
+100%{
+    background-position: 0% 50%;
+}
+}
+   h1{
+        text-align: center;
+    }
+    table, th, td {
+        color: black;
+        background-color: white;
+        text-align: center;
+        border: 2px solid black;
+        border-collapse: collapse;
+        margin: auto;
+        width: 500px;
+        box-shadow: 11px 15px 31px -9px;
+    }
+thead{
+    color: white;
+    background-color: black;
+    text-shadow: 1px black;
+}
+
+</style>
+<body class="gradient">
+    <select id="banco-select">
+        <option value="0">Banco 1</option>
+        <option value="1">Banco 2</option>
+        <option value="2">Banco 3</option>
+        <option value="3">Banco 4</option>
+        <option value="4">Banco 5</option>
+    </select>
+    <input class="text" type="text" id="cliente" placeholder="cliente"><br>
+    <input class="text" type="text" id="drink" placeholder="drink"><br>
+    <input class="text" type="number" id="preco" placeholder="preço (ex: 4.99)"><br>
+    <input class="text" type="number" id="qnt" placeholder="quantidade (ex: 2)"><br>
+    <button id="enviar">ENVIAR</button>
+    <table border = "1">
+       <thead> <tr>
+            <th>Bancos</th>
+            <th>Cliente</th>
+            <th>Drink</th>
+            <th>Preço</th>
+            <th>Qnt</th>
+            <th>Total</th>
+        </thead>
+</tr>
+<td>Banco 1</td>
+<td id="0"></td>
+<td id="1"></td>
+<td id="2"></td>
+<td id="3"></td>
+<td id="4"></td>
+</tr>
+<td>Banco 2</td>
+<td id="5"></td>
+<td id="6"></td>
+<td id="7"></td>
+<td id="8"></td>
+<td id="9"></td>
+</tr>
+<td>Banco 3</td>
+<td id="10"></td>
+<td id="11"></td>
+<td id="12"></td>
+<td id="13"></td>
+<td id="14"></td>
+</tr>
+<td>Banco 4</td>
+<td id="15"></td>
+<td id="16"></td>
+<td id="17"></td>
+<td id="18"></td>
+<td id="19"></td>
+</tr>
+<td>Banco 5</td>
+<td id="20"></td>
+<td id="21"></td>
+<td id="22"></td>
+<td id="23"></td>
+<td id="24"></td>
+    </table>
+</body>
+</html>
